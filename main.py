@@ -1,5 +1,13 @@
 items = []
 
+loops = [5, 2, 5, 2, 2]
+
+for x in loops:
+    string = ""
+    for y in range(x):
+        string = string + "x"
+    print(string)
+
 while True:
     
     while True:
