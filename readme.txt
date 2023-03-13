@@ -1,3 +1,7 @@
+echo "deb http://download.opensuse.org/repositories/home:/hawkeye116477:/librewolf/Debian_11/ ./" | sudo tee /etc/apt/sources.list.d/librewolf.list
+wget -qO - https://download.opensuse.org/repositories/home:hawkeye116477:librewolf/Debian_11/Release.key | sudo apt-key add -
+
+##############################
 sudo apt update && sudo apt install -y wget gnupg lsb-release apt-transport-https ca-certificates
 
 distro=$(if echo " una vanessa focal jammy bullseye vera uma" | grep -q " $(lsb_release -sc) "; then echo $(lsb_release -sc); else echo focal; fi)
